@@ -20,7 +20,8 @@ const vehicleSchema = new db.Schema({
     maintenances: [
         {
             type: db.Schema.Types.ObjectId,
-            ref: 'Maintenance'
+            ref: 'Maintenance',
+            required: false
         }
     ]
 });
